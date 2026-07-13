@@ -1,1 +1,19 @@
+python -m venv venv
+# On Windows:
+venv\Scripts\activate
+# On Mac/Linux:
+source venv/bin/activate
 
+
+# Core Framework
+Django>=5.0,<6.0
+Pillow>=10.0.0       # Required by Django for handling Product image fields
+
+# Authentication & Social Sign-In (Google OAuth)
+django-allauth>=0.61.0
+
+# Environment Configuration (Keeps OAuth credentials safe)
+python-dotenv>=1.0.0
+
+# Database Driver (If using PostgreSQL instead of default SQLite)
+psycopg2-binary>=2.9.0
